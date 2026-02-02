@@ -1,0 +1,122 @@
+{
+    "key": "group_5f63b6666da8a",
+    "title": "TEMPLATE: CARDS",
+    "fields": [
+        {
+            "key": "field_5f63b67f4556e",
+            "label": "Card Title",
+            "name": "card_title",
+            "type": "text",
+            "instructions": "Max 32 characters.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f63b6da45570",
+            "label": "Card Image",
+            "name": "card_image",
+            "type": "image",
+            "instructions": "Add a smaller sized image here to not waste website resources. Something less that 512Kb.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f63b67f4556e",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": ".512",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5f63b6964556f",
+            "label": "Card Information",
+            "name": "card_information",
+            "type": "textarea",
+            "instructions": "Max 156 characters.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f63b6da45570",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 156,
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5f63b753aefc1",
+            "label": "Card CTA URL",
+            "name": "card_cta_url",
+            "type": "link",
+            "instructions": "Use this card call to action link to direct visitors. i.e. to the Services page, or offsite to a past project. Optional.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f63b6964556f",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 9999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1620667943
+}

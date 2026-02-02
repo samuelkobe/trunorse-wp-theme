@@ -1,0 +1,47 @@
+{
+    "key": "group_6980fd77c6438",
+    "title": "Home Reviews",
+    "fields": [
+        {
+            "key": "field_6980fd7812a9b",
+            "label": "Reviews Shortcode",
+            "name": "reviews_shortcode",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Add your Review Plugin's shortcode here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "[trustindex no-registration=google]",
+            "allow_in_bindings": 0,
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "24"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1770061236
+}

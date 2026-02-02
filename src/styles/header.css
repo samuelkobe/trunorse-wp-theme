@@ -1,0 +1,33 @@
+header.scrolled {
+  @apply shadow-2xl bg-secondary text-tertiary;
+}
+
+header.scrolled h1,
+header.scrolled p,
+header.scrolled ul li a,
+header.scrolled ul,
+header.scrolled li {
+  @apply text-tertiary;
+}
+
+header.scrolled a.button {
+  @apply bg-primary text-white;
+}
+
+header.scrolled button.hamburger {
+  @apply text-tertiary;
+}
+
+nav ul li a {
+  @apply mr-8;
+}
+
+nav ul li.active a {
+  @apply border-b-2;
+}
+
+@media (max-width: 767px) {
+  header.open-menu:not(.scrolled) a.button {
+    @apply bg-primary text-white;
+  }
+}

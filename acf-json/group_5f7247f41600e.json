@@ -1,0 +1,62 @@
+{
+    "key": "group_5f7247f41600e",
+    "title": "Contact Form Settings",
+    "fields": [
+        {
+            "key": "field_5f725002bb53a",
+            "label": "Contact Message",
+            "name": "contact_message",
+            "type": "textarea",
+            "instructions": "Add instructions for what visitors should add to their contact message (Max character 128).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Email us with a few details of your project and we will contact you within 24 hours.",
+            "placeholder": "",
+            "maxlength": 128,
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5f724800caf31",
+            "label": "Contact Form",
+            "name": "contact_form",
+            "type": "wysiwyg",
+            "instructions": "Add the contact form short code here. You can find the short code in WPForms in the side bar menu to the left.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-trunorse-settings"
+            }
+        ]
+    ],
+    "menu_order": 52,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1601327181
+}

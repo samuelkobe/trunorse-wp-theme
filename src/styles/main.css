@@ -1,0 +1,43 @@
+/* tailwindcss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.button {
+  @apply bg-white text-primary p-4 leading-none text-center max-w-xxs;
+  transition: 250ms linear 0s;
+}
+
+.button.alt {
+  @apply bg-primary text-white;
+}
+
+.button:hover {
+  opacity: 0.9;
+  @apply text-tertiary;
+}
+
+.button:hover.alt {
+  @apply text-lightest-gray;
+}
+.legal-pages h1,
+.legal-pages h2,
+.legal-pages h3,
+.legal-pages h4,
+.legal-pages h5,
+.legal-pages h6 {
+  @apply font-bold pb-1 text-xl;
+}
+
+.legal-pages p,
+.legal-pages ul {
+  @apply pb-4;
+}

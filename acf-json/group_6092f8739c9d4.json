@@ -1,0 +1,229 @@
+{
+    "key": "group_6092f8739c9d4",
+    "title": "Projects Post Objects",
+    "fields": [
+        {
+            "key": "field_6092f8e702d2a",
+            "label": "Project Details",
+            "name": "project_details",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Use the project details to let visitors know the project's Location, Completion date, etc.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_6092f91c02d2b",
+            "min": 2,
+            "max": 5,
+            "layout": "block",
+            "button_label": "Add detail",
+            "sub_fields": [
+                {
+                    "key": "field_6092f91c02d2b",
+                    "label": "Detail Title",
+                    "name": "detail_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Add a short detail title here. i.e. Location or Completion Date (Max characters 32).",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 32,
+                    "parent_repeater": "field_6092f8e702d2a"
+                },
+                {
+                    "key": "field_6092f96302d2c",
+                    "label": "Detail Information",
+                    "name": "detail_information",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Add the information that matches the title for this specific project.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6092f8e702d2a"
+                }
+            ],
+            "rows_per_page": 20
+        },
+        {
+            "key": "field_6092f873a3c5a",
+            "label": "Project snapshot",
+            "name": "project_snapshot",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "This is the first sentence about the Project. It is seen as the first line when inside a specific project. It should be short and sweet (Max 256 characters).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 256,
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_6092f873a3c6d",
+            "label": "About Project",
+            "name": "about_project",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Add any text details about the specific Project. This should be between 2 and 5 sentences long (Max 512 characters).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 512,
+            "rows": 4,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_6092f873a3c74",
+            "label": "Project Content",
+            "name": "project_content",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "Add images about this specific project.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_6091e8a74001c": {
+                    "key": "layout_6091e8a74001c",
+                    "name": "gallery",
+                    "label": "Gallery",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6092f873aa645",
+                            "label": "Gallery",
+                            "name": "gallery",
+                            "aria-label": "",
+                            "type": "gallery",
+                            "instructions": "These images must be of a specific size. the minimum size is 900x600 and the max is 1800x1200. This is to ensure images are not too small or too large. If you are having issues sizing images. Upload the image to the <b>'Media'<\/b> section in the sidebar and edit the size with the resize and crop tools.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min": 3,
+                            "max": 12,
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "insert": "append",
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60922a12c81ec": {
+                    "key": "layout_60922a12c81ec",
+                    "name": "additional_information",
+                    "label": "Additional Information",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6092f873aa64c",
+                            "label": "Content",
+                            "name": "content",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Add any extra details about the specific Project. This should be between 2 and 5 sentences long (Max 512 characters).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": 512,
+                            "rows": 4,
+                            "new_lines": "wpautop"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Content",
+            "min": 0,
+            "max": 2
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "project"
+            }
+        ]
+    ],
+    "menu_order": 20,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1696530055
+}

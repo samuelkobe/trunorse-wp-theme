@@ -1,0 +1,92 @@
+{
+    "key": "group_5f6be03087843",
+    "title": "TEMPLATE: TESTIMONIALS",
+    "fields": [
+        {
+            "key": "field_5f6be03cd2d40",
+            "label": "Testimonial Author",
+            "name": "testimonial_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add a title to the testimonial (Max characters 48).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": 48,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5f6be0a1fe5ba",
+            "label": "Testimonial Date",
+            "name": "testimonial_author",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add the name of the person or company that provided the testimonial. Optional, (Max characters 48).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f6be03cd2d40",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": 48,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5f6be0661bf50",
+            "label": "Testimonial Paragraph",
+            "name": "testimonial_paragraph",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Add a short paragraph for the testimonial (It is highly recommended that you have no more than 360 characters for this paragrapgh). Quotations around testimonial are automatically included by the website theme. i.e. “A nice thing said about your company.”",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 9999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1681254221
+}

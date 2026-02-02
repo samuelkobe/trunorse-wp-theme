@@ -1,0 +1,11 @@
+.footer-menu li {
+  @apply mb-2;
+}
+
+.footer-menu li a {
+  @apply duration-250;
+}
+
+.footer-menu li a:hover {
+  @apply opacity-75 transition-colors;
+}

@@ -1,0 +1,77 @@
+{
+    "key": "group_5f6bcf5a76931",
+    "title": "TEMPLATE: CTA BAR",
+    "fields": [
+        {
+            "key": "field_5f6bd163f5441",
+            "label": "CTA Subtitle",
+            "name": "cta_subtitle",
+            "type": "text",
+            "instructions": "Add a short subtitle (Max 16 Characters).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 16
+        },
+        {
+            "key": "field_5f6bd18df5442",
+            "label": "CTA Title Message",
+            "name": "cta_title_message",
+            "type": "text",
+            "instructions": "Use this to ask a question or prompt a user to click the Call to action (CTA) button (Max 64 Characters).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "75",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 64
+        },
+        {
+            "key": "field_5f6bd1f0f5443",
+            "label": "CTA Link",
+            "name": "cta_link",
+            "type": "link",
+            "instructions": "Add an internal or extra link to direct visitors to the Call to action (CTA) message.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 9999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1600901660
+}

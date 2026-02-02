@@ -1,0 +1,88 @@
+{
+    "key": "group_5ec5f02411b2b",
+    "title": "Menu Settings",
+    "fields": [
+        {
+            "key": "field_5ec5f04c13c10",
+            "label": "Menu Logo",
+            "name": "menu_logo",
+            "type": "image",
+            "instructions": "Add logo for menu here.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5ec5f08a13c11",
+            "label": "Menu phone number text",
+            "name": "menu_phone_number_text",
+            "type": "text",
+            "instructions": "Add phone number with preferred text style. i.e. '778 847 2361' or '778.847.2361' etc.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ec5f0e113c12",
+            "label": "Menu phone number",
+            "name": "menu_phone_number",
+            "type": "number",
+            "instructions": "Add phone number with no text style. i.e. '7788472361'",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-trunorse-settings"
+            }
+        ]
+    ],
+    "menu_order": 50,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1599863517
+}

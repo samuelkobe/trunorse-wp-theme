@@ -1,0 +1,41 @@
+{
+    "key": "group_5f6c61b392ce2",
+    "title": "TEMPLATE: ACCOLADE MESSAGE",
+    "fields": [
+        {
+            "key": "field_5f6c61c359f4a",
+            "label": "Accolades",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Accolades have been added to the site in this location. To edit accolades go to: Theme Settings > Trunorse Settings in the left side bar.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 9999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1601321992
+}

@@ -1,0 +1,115 @@
+/* WPForms styling - commented out
+[id^="wpforms-"] ::placeholder {
+  @apply text-light-gray !important;
+}
+
+[id^="wpforms-"] input,
+[id^="wpforms-"] div.choices div.choices__inner,
+[id^="wpforms-"] textarea {
+  @apply bg-lightest-gray text-tertiary border-transparent text-xl !important;
+}
+
+[id^="wpforms-"] input,
+[id^="wpforms-"] div.choices div.choices__inner {
+  @apply h-12 !important;
+}
+
+[id^="wpforms-"]
+  div.choices__item.choices__placeholder.choices__item--selectable {
+  @apply text-light-gray opacity-100 !important;
+}
+
+[id^="wpforms-"] div.wpforms-field-limit-text {
+  @apply text-light-gray mb-2 !important;
+}
+
+[id^="wpforms-"] div.wpforms-submit-container {
+  @apply w-full !important;
+}
+
+[id^="wpforms-"] div.wpforms-submit-container button {
+  @apply bg-primary-light text-secondary text-xl font-bold w-full !important;
+}
+*/
+
+/* Contact Form 7 Styling */
+
+.wpcf7-form ::placeholder {
+  @apply !text-black;
+}
+
+.wpcf7-form input,
+.wpcf7-form textarea {
+  @apply bg-white border-2 border-black text-black p-4 w-full max-w-full;
+}
+
+.wpcf7-form input.wpcf7-submit {
+  @apply !border-none !uppercase !bg-primary !cursor-pointer !text-secondary !text-xl !font-bold !w-full;
+}
+
+.wpcf7-form .wpcf7-select {
+  @apply block text-base font-normal capitalize text-black w-full max-w-full m-0 border border-light-gray bg-white py-4 mt-2;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7.57 3.75'%3E%3Cpolygon points='1.22 0.5 6.36 0.5 3.79 3.04 3.79 3.04 1.22 0.5' style='fill:%23171717;stroke:%23171717;stroke-miterlimit:10'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+.wpcf7-select {
+  @apply !mt-0 !px-4 !border-2 !border-black;
+}
+
+.wpcf7-form .ajax-loader {
+  @apply absolute m-0 -left-3 top-3;
+}
+
+.wpcf7-form input:focus,
+.wpcf7-form textarea:focus,
+.wpcf7-form .wpcf7-select:focus,
+.wpcf7-form ::placeholder:focus {
+  @apply border-2 border-primary text-primary bg-primary-light;
+}
+
+.wpcf7-form .wordpress-content.wrapper-content {
+  @apply flex flex-row w-full flex-wrap mb-0 lg:mb-4;
+}
+
+.wpcf7-form .wordpress-content.left-content {
+  @apply flex flex-col w-full lg:w-1/2 max-w-full pr-0 lg:pr-4 mb-2;
+}
+
+.wpcf7-form .wordpress-content.right-content {
+  @apply flex flex-col w-full lg:w-1/2 max-w-full pl-0 lg:pl-4 mb-2;
+}
+
+.wpcf7-form .wordpress-content.content-padding-bottom {
+  @apply mb-8;
+}
+
+/* Support for rtl text, explicit support for Arabic and Hebrew */
+.wpcf7-form *[dir="rtl"] .wpcf7-select,
+.wpcf7-form :root:lang(ar) .wpcf7-select,
+.wpcf7-form :root:lang(iw) .wpcf7-select {
+  background-position: left 0.7em top 50%, 0 0;
+  padding: 0.6em 0.8em 0.5em 1.4em;
+}
+
+form > div.wpcf7-response-output {
+  @apply text-base lg:text-xl mb-8;
+  padding: 1rem !important;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

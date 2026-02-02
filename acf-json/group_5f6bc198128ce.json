@@ -1,0 +1,163 @@
+{
+    "key": "group_5f6bc198128ce",
+    "title": "TEMPLATE: ACCOLADES",
+    "fields": [
+        {
+            "key": "field_5f6bc1d387089",
+            "label": "Accolade Title",
+            "name": "accolade_title",
+            "type": "text",
+            "instructions": "Add the name of the accolade or award (Max characters 32).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 32
+        },
+        {
+            "key": "field_5f6bc20d8708a",
+            "label": "Accolade Description",
+            "name": "accolade_description",
+            "type": "textarea",
+            "instructions": "Add a short description of the accolade or award (Max Character 240).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 240,
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_60833af815d8e",
+            "label": "Icon Type",
+            "name": "icon_type",
+            "type": "true_false",
+            "instructions": "Leave this set to 'Normal' unless you are using this for the BBB Accredited Business embed code.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "BBB Accredited",
+            "ui_off_text": "Normal"
+        },
+        {
+            "key": "field_5f750f8d6c709",
+            "label": "Accolade Icon",
+            "name": "accolade_icon",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60833af815d8e",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "small",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5f6bc2aa8708b",
+            "label": "Accolade Link",
+            "name": "accolade_link",
+            "type": "link",
+            "instructions": "Add a link to this accolade or award (Optional).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60833af815d8e",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_60833b7515d8f",
+            "label": "Accolade Icon Embed (BBB Accredited)",
+            "name": "accolade_icon_embed_bbb",
+            "type": "wysiwyg",
+            "instructions": "Add embed code from the BBB.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60833af815d8e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<a href=\"https:\/\/www.bbb.org\/ca\/bc\/chilliwack\/profile\/home-renovation\/trunorse-construction-ltd-0037-1378267\/#sealclick\" target=\"_blank\" rel=\"nofollow\"><img src=\"https:\/\/seal-mbc.bbb.org\/seals\/blue-seal-293-61-bbb-1378267.png\" style=\"border: 0;\" alt=\"Trunorse Construction Ltd. BBB Business Review\" \/><\/a>",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 9999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1619214111
+}

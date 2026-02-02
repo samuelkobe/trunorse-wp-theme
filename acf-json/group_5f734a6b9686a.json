@@ -1,0 +1,100 @@
+{
+    "key": "group_5f734a6b9686a",
+    "title": "TEMPLATE: TEAM CARDS",
+    "fields": [
+        {
+            "key": "field_5f734a6b9f52e",
+            "label": "Card Name",
+            "name": "card_name",
+            "type": "text",
+            "instructions": "Add team member's name.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f734a6b9f545",
+            "label": "Card Image",
+            "name": "card_image",
+            "type": "image",
+            "instructions": "Add team member's image here.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f734a6b9f52e",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": ".512",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5f734a6b9f557",
+            "label": "Card Title",
+            "name": "card_title",
+            "type": "textarea",
+            "instructions": "Add team member's job title (Max 32 characters).",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f734a6b9f545",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 32,
+            "rows": 2,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 9999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1601391320
+}

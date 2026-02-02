@@ -1,0 +1,102 @@
+{
+    "key": "group_5f721b50224bd",
+    "title": "Region Settings",
+    "fields": [
+        {
+            "key": "field_5f721c8a0c3db",
+            "label": "Regions",
+            "name": "regions",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5f721c9f0c3dc",
+            "min": 1,
+            "max": 12,
+            "layout": "table",
+            "button_label": "Add region",
+            "sub_fields": [
+                {
+                    "key": "field_5f721c9f0c3dc",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "Add the name of the region here (Max 24 Characters).",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 24
+                }
+            ]
+        },
+        {
+            "key": "field_5f721ccc1bbc7",
+            "label": "Regions Message",
+            "name": "regions_message",
+            "type": "textarea",
+            "instructions": "Add a short description here (Max 128 Characters).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 128,
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5f721d03db915",
+            "label": "Google Map Embed",
+            "name": "google_map_embed",
+            "type": "wysiwyg",
+            "instructions": "Paste the share code from google map here.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-trunorse-settings"
+            }
+        ]
+    ],
+    "menu_order": 53,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1601325031
+}

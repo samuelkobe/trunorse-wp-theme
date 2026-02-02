@@ -1,0 +1,177 @@
+{
+    "key": "group_5f61301aa2f63",
+    "title": "Home Page Hero",
+    "fields": [
+        {
+            "key": "field_5f6132d3dc981",
+            "label": "Hero Background Image",
+            "name": "hero_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "3.2",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5f61308e084bc",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "text",
+            "instructions": "Add a short concise title for the home page hero section. Max 96 characters.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "BC’s premium custom home renovation and construction professionals.",
+            "placeholder": "Say something catchy! Let visitors know what you're all about!",
+            "prepend": "",
+            "append": "",
+            "maxlength": 96
+        },
+        {
+            "key": "field_5f613101084be",
+            "label": "Hero Content",
+            "name": "hero_content",
+            "type": "text",
+            "instructions": "Add a concise paragraph for the home page hero section. Max 128 characters.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Serving Vancouver, Lower Mainland BC communities and beyond, creating beautiful home and outdoor living spaces.",
+            "placeholder": "Say something catchy! Let visitors know what you're all about!",
+            "prepend": "",
+            "append": "",
+            "maxlength": 128
+        },
+        {
+            "key": "field_5f63af6c8033f",
+            "label": "Hero CTA",
+            "name": "hero_cta",
+            "type": "link",
+            "instructions": "This Call to Action should be used to direct users to a 'request a quote' email\/form. It can point to specific internal or external webpages, along with email addresses. <br> To do this, fill in the URL field as follows: <em>'mailto:email@exmaple.com'<\/em>, replacing the placeholder email with the desired email. <br >Lastly, ensure the open in a new tab checkbox is checked if using the mailto: email option or an external page. Leave it unchecked for an internal page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5f63b602496c1",
+            "label": "Hero Repeater",
+            "name": "hero_repeater",
+            "type": "repeater",
+            "instructions": "Add four featured pages here. Min\/Max 4. This should always be used to optimize directing users to information of importance across the site.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 4,
+            "layout": "block",
+            "button_label": "Add Card",
+            "sub_fields": [
+                {
+                    "key": "field_5f63bb4f95365",
+                    "label": "Hero Card",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_5f63b83b2f9ef",
+                    "label": "Cards",
+                    "name": "cards",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5f63b6666da8a"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5f68ed88b2505",
+            "label": "Hero Cards CTA",
+            "name": "hero_cards_cta",
+            "type": "link",
+            "instructions": "Direct visitors to the another page. i.e. 'View all services'",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-home.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1600971296
+}
