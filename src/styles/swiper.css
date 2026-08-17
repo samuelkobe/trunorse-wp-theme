@@ -2,6 +2,16 @@
   @apply w-full h-auto;
 }
 
+/* Hide Swiper's default navigation icons - using custom ::after arrows instead */
+.swiper-button-next .swiper-navigation-icon,
+.swiper-button-prev .swiper-navigation-icon,
+.swiper-button-next svg.swiper-button-prev,
+.swiper-button-prev svg.swiper-button-next,
+.swiper-button-next > svg,
+.swiper-button-prev > svg {
+  display: none !important;
+}
+
 /* These styles are used to override the Swiper.js navigation buttons */
 .swiper-button-custom-arrow .swiper-button-next,
 .swiper-button-custom-arrow .swiper-button-prev {

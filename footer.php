@@ -53,9 +53,10 @@
 					<p class="py-2"> All Rights Reserved. <?php if ( get_field( 'copyright_text', 'option' ) ) { the_field( 'copyright_text', 'option' ); } ?>
 						<span class="text-xs inline lg:block"><?php _e('Powered by', 'web-ok-starter'); ?> <a href="https://webok.ca" target="_blank" rel="noopener" class="text-xs hover:text-primary transition-colors duration-200">Web Ok Solutions Inc.</a></span>
 					</p>
-					<span class="text-lg md:text-base flex flex-row text-secondary items-center justify-start md:justify-between w-full md:w-32 py-2">
+					<span class="text-lg md:text-base flex flex-row text-secondary items-center justify-start md:justify-between w-full md:w-fit py-2">
 						<a class="hover:opacity-75 hover:transition-colors duration-250 pr-4" href="/privacy">Privacy</a>
 						<a class="hover:opacity-75 hover:transition-colors duration-250 pr-4" href="/terms">Terms</a>
+						<a class="hover:opacity-75 hover:transition-colors duration-250 pr-4" href="/cookies">Cookies</a>
 					</span>
 				</div>
 				<!-- /copyright -->
@@ -69,6 +70,22 @@
 		<?php wp_footer(); ?>
 
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+		<!-- Hide reCAPTCHA badge -->
+		<script>
+			setTimeout(function() {
+				var badge = document.querySelector('.grecaptcha-badge');
+				if (badge) {
+					badge.style.transition = 'transform 500ms ease-out';
+					badge.style.transform = 'translateX(200px)';
+				}
+			}, 2500);
+		</script>
+		<style>
+			html, body {
+				overflow-x: hidden;
+			}
+		</style>
 
 	</body>
 </html>

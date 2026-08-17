@@ -12,6 +12,9 @@
 // Load Vite integration
 require_once get_template_directory() . '/inc/vite.php';
 
+// Load Schema.org JSON-LD
+require_once get_template_directory() . '/inc/schema.php';
+
 
 /*------------------------------------*\
   Overall Site Options
@@ -39,6 +42,9 @@ if (function_exists('add_theme_support'))
 {
     // Add Menu Support
     add_theme_support('menus');
+
+    // Add Title Tag Support (required for SEOPress)
+    add_theme_support('title-tag');
 
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
@@ -145,6 +151,18 @@ function html5blank_header_scripts()
         // Conditionizr and Modernizr are deprecated and no longer needed
     }
 }
+
+// Load Trustindex CSS manually (bypasses broken JS loader)
+function load_trustindex_css() {
+    $upload_dir = wp_upload_dir();
+    $css_file = $upload_dir['basedir'] . '/trustindex-google-widget.css';
+    $css_url = $upload_dir['baseurl'] . '/trustindex-google-widget.css';
+
+    if (file_exists($css_file)) {
+        wp_enqueue_style('trustindex-widget', $css_url, [], filemtime($css_file));
+    }
+}
+add_action('wp_enqueue_scripts', 'load_trustindex_css');
 
 // Load HTML5 Blank footer scripts
 function html5blank_footer_scripts()

@@ -2,7 +2,7 @@
 
   <div class="absolute z-0 top-0 left-0 h-auto w-full">
     <?php if ( get_field( 'hero_background_image' ) ) : ?>
-      <img src="<?php the_field( 'hero_background_image' ); ?>" alt="<?php the_field( 'hero_title' ); ?>" class="max-h-full h-192 object-cover w-full" />
+      <img src="<?php the_field( 'hero_background_image' ); ?>" alt="<?php the_field( 'hero_title' ); ?>" class="max-h-full h-192 object-cover w-full" width="1920" height="768" fetchpriority="high" />
     <?php endif ?>
   </div>
 
@@ -20,22 +20,23 @@
   </div>
 
 </div>
-<div class="lg:container lg:mx-auto px-8 md:px-16 lg:px-8 overflow-hidden">
+<div class="lg:container lg:mx-auto px-8 md:px-16 lg:px-8 overflow-hidden fade-in-up-ready" id="hero-slider-section">
     <div class="swiper-container swiper-hero flex flex-row flex-wrap mt-8 overflow-visible pr-16">
       <?php if ( have_rows( 'hero_repeater' ) ) : ?>
          <div class="swiper-wrapper m-4 sm:m-8">
           <?php while ( have_rows( 'hero_repeater' ) ) : the_row(); ?>
             <div class="swiper-slide shadow-xl">
               <?php if ( get_sub_field( 'card_image' ) ) : ?>
-                <img class="min-w-full h-48 object-cover" src="<?php the_sub_field( 'card_image' ); ?>" alt="<?php the_sub_field( 'card_title' ); ?> slider image" loading="lazy" />
+                <img class="min-w-full h-48 object-cover hero-slider-img" src="<?php the_sub_field( 'card_image' ); ?>" alt="<?php the_sub_field( 'card_title' ); ?> slider image" width="270" height="192" />
               <?php endif ?>
               <div class="bg-white">
                 <h3 class="whitespace-no-wrap text-xl md:text-2xl px-5 pt-3 font-bold text-black"><?php the_sub_field( 'card_title' ); ?></h3>
                 <p class="text-light-gray font-light text-sm min-h-full h-32 px-5 pt-4"><?php the_sub_field( 'card_information' ); ?></p>
                 <?php $card_cta_url = get_sub_field( 'card_cta_url' ); ?>
                 <?php if ( $card_cta_url ) : ?>
-                  <div class="flex flex-col items justify-center bg-primary text-white w-full text-center text-lg leading-normal h-12 hover:bg-tertiary hover:transition-colors duration-250">
-                    <a href="<?php echo esc_url( $card_cta_url['url'] ); ?>" target="<?php echo esc_attr( $card_cta_url['target'] ); ?>"><?php echo esc_html( $card_cta_url['title'] ); ?></a>
+                  <?php $card_title = get_sub_field( 'card_title' ); ?>
+                  <div class="flex flex-col items justify-center bg-primary text-white w-full text-center text-base lg:text-base leading-normal h-12 hover:bg-tertiary hover:transition-colors duration-250">
+                    <a href="<?php echo esc_url( $card_cta_url['url'] ); ?>" target="<?php echo esc_attr( $card_cta_url['target'] ); ?>">View <?php echo esc_html( $card_title ); ?> Services</a>
                   </div>
                 <?php endif; ?>
               </div>
@@ -62,3 +63,39 @@
     <?php endif; ?>
 
 </div>
+
+<script>
+(function() {
+  var section = document.getElementById('hero-slider-section');
+  if (!section) return;
+
+  var images = section.querySelectorAll('img');
+  var loadedCount = 0;
+  var totalImages = images.length;
+
+  function checkAllLoaded() {
+    loadedCount++;
+    if (loadedCount >= totalImages) {
+      section.classList.add('loaded');
+    }
+  }
+
+  if (totalImages === 0) {
+    section.classList.add('loaded');
+  } else {
+    images.forEach(function(img) {
+      if (img.complete) {
+        checkAllLoaded();
+      } else {
+        img.addEventListener('load', checkAllLoaded);
+        img.addEventListener('error', checkAllLoaded);
+      }
+    });
+  }
+
+  // Fallback: show after 2 seconds regardless
+  setTimeout(function() {
+    section.classList.add('loaded');
+  }, 2000);
+})();
+</script>

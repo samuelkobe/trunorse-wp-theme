@@ -1,2 +1,2 @@
-/* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;600&display=swap");
+/* FONTS - Now loaded via preload in header.php to avoid render-blocking */
+/* Google Fonts: Lato (400,700,900) and Open Sans (300,400,600,700) */

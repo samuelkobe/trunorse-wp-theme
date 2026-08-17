@@ -1,6 +1,6 @@
 {
     "key": "group_6980fd77c6438",
-    "title": "Home Reviews",
+    "title": "Contact Reviews",
     "fields": [
         {
             "key": "field_6980fd7812a9b",
@@ -29,19 +29,21 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "24"
+                "value": "30"
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 10,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1770061236
+    "modified": 1770081989
 }

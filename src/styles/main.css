@@ -41,3 +41,27 @@ p {
 .legal-pages ul {
   @apply pb-4;
 }
+
+/* Fade in up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Start hidden, waiting for images to load */
+.fade-in-up-ready {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Animate when images are loaded */
+.fade-in-up-ready.loaded {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+

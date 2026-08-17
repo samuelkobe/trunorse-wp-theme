@@ -1,5 +1,5 @@
 <div class="container mx-auto flex flex-col items-center justify-center h-64">
-	<h6 class="text-xs uppercase mb-3"><?php the_field( 'estimate_cta_cta_subtitle' ); ?></h6>
+	<span class="text-xs uppercase mb-3 inline-block"><?php the_field( 'estimate_cta_cta_subtitle' ); ?></span>
 	<h3 class="text-2.5xl font-bold mb-10"><?php the_field( 'estimate_cta_cta_title_message' ); ?></h3>
 	<?php $cta_link = get_field( 'estimate_cta_cta_link' ); ?>
 	<?php if ( $cta_link ) : ?>

@@ -6,6 +6,7 @@
             "key": "field_5f72199719cb1",
             "label": "Hero Banner",
             "name": "hero_banner",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -21,6 +22,7 @@
                     "key": "field_5f7219971b88c",
                     "label": "Hero Banner Image",
                     "name": "hero_banner_image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "Add Banner image for page.",
                     "required": 0,
@@ -45,6 +47,7 @@
                     "key": "field_5f7219971b89a",
                     "label": "Hero Banner Page Description",
                     "name": "hero_banner_page_description",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "Add a short sentence to go along with the page name (Max characters 96).",
                     "required": 1,
@@ -66,6 +69,7 @@
             "key": "field_5f7219aa6d81e",
             "label": "Contact Form",
             "name": "",
+            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -83,27 +87,7 @@
             "key": "field_5f721b872728d",
             "label": "Regions",
             "name": "regions",
-            "type": "clone",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "clone": [
-                "group_5f72206d3754c"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
-        },
-        {
-            "key": "field_5f73497864a4b",
-            "label": "Regions Message",
-            "name": "regions_message",
+            "aria-label": "",
             "type": "clone",
             "instructions": "",
             "required": 0,
@@ -141,5 +125,7 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1601390981
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1770081900
 }

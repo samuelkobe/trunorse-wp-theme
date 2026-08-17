@@ -30,10 +30,6 @@
 			<?php get_template_part('components/_estimate-cta-bar'); ?>
 		</section>
 
-		<section class="bg-primary-light text-primary p-4">
-			<?php get_template_part('components/_reviews'); ?>
-		</section>
-
 
 	</main>
 

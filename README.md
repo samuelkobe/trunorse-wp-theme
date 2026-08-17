@@ -1,2 +1,5 @@
-# webok-html5blank-theme
-HTML5 Blank Theme for Wordpress - Web Ok Solutions Inc.
+# Trunorse Construction
+
+Custom WordPress theme for Trunorse Construction. Built with PHP, Tailwind CSS, and ACF flexible content layouts.
+
+Developed by [Web Ok](https://webok.ca).
